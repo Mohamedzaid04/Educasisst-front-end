@@ -11,7 +11,8 @@ import { NucleoiconsComponent } from './components/nucleoicons/nucleoicons.compo
 
 const routes: Routes =[
     { path: '', redirectTo: 'index', pathMatch: 'full' },
-    { path: 'index',                component: ComponentsComponent },
+    { path: 'index',                component: LoginComponent },
+    { path: 'component',            component: ComponentsComponent },
     { path: 'nucleoicons',          component: NucleoiconsComponent },
     { path: 'examples/landing',     component: LandingComponent },
     { path: 'examples/login',       component: LoginComponent },
@@ -19,7 +20,7 @@ const routes: Routes =[
 ];
 
 @NgModule({
-    imports: [
+     imports: [
         CommonModule,
         BrowserModule,
         RouterModule.forRoot(routes)
